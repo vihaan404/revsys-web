@@ -21,17 +21,23 @@
         <section class="add-section">
             <h2>Add New Topic</h2>
             <form id="addForm">
-                <input type="text" id="topicInput" placeholder="Topic Name (e.g., Paging)" required>
-                <input type="text" id="tagInput" placeholder="Subject Tag (e.g., OS)" required>
+                <input type="text" id="topicInput" placeholder="Topic Name (e.g., boolean algebra)" required>
+                <input type="text" id="tagInput" placeholder="Subject Tag (e.g., digital logic)" required>
                 <button type="submit" id="btnAdd" disabled>Add</button>
             </form>
             <small id="connectionWarning">Please connect a .json file first.</small>
         </section>
 
         <section class="dashboard-section">
-            <h2>Daily Queue</h2>
+            <h2>Revision Queue</h2>
             <div id="dashboardQueue" class="queue-grid">
                 </div>
+            
+            <div id="paginationControls" class="pagination">
+                <button id="btnPrev" disabled>&lt; Prev</button>
+                <span id="pageIndicator">Page 1 / 1</span>
+                <button id="btnNext" disabled>Next &gt;</button>
+            </div>
         </section>
     </main>
 
